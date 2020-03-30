@@ -84,7 +84,17 @@ export default {
 					name: "王小虎1",
 					province: "上海",
 					city: "普陀区",
-					address: "上海市普陀区金沙江路 1518 弄",
+					address:
+						"上" +
+						"海" +
+						"市" +
+						"普" +
+						"陀" +
+						"区" +
+						"金" +
+						"沙" +
+						"江" +
+						"路1518弄",
 					zip: 200333
 				},
 				{
@@ -92,7 +102,7 @@ export default {
 					name: "王小虎2",
 					province: "上海",
 					city: "普陀区",
-					address: "上海市普陀区金沙江路 1519 弄",
+					address: "上海市普陀区金沙江路1518弄",
 					zip: 200333
 				},
 				{
@@ -100,7 +110,7 @@ export default {
 					name: "王小虎3",
 					province: "上海",
 					city: "普陀区",
-					address: "上海市普陀区金沙江路 1520 弄",
+					address: "上海市普陀区金沙江路1518弄",
 					zip: 200333
 				},
 				{
@@ -108,7 +118,7 @@ export default {
 					name: "王小虎4",
 					province: "上海",
 					city: "普陀区",
-					address: "上海市普陀区金沙江路 1521 弄",
+					address: "上海市普陀区金沙江路1518弄",
 					zip: 200333
 				},
 				{
@@ -116,7 +126,7 @@ export default {
 					name: "王小虎5",
 					province: "上海",
 					city: "普陀区",
-					address: "上海市普陀区金沙江路 1522弄",
+					address: "上海市普陀区金沙江路1522弄",
 					zip: 200333
 				},
 				{
@@ -124,7 +134,7 @@ export default {
 					name: "王小虎6",
 					province: "上海",
 					city: "普陀区",
-					address: "上海市普陀区金沙江路 1523 弄",
+					address: "上海市普陀区金沙江路1518弄",
 					zip: 200333
 				},
 				{
@@ -132,7 +142,7 @@ export default {
 					name: "王小虎7",
 					province: "上海",
 					city: "普陀区",
-					address: "上海市普陀区金沙江路 1524 弄",
+					address: "上海市普陀区金沙江路1518弄",
 					zip: 200333
 				}
 			]
