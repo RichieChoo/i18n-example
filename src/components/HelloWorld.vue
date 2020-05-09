@@ -1,6 +1,13 @@
 <template>
 	<div class="hello">
 		<el-form style="width:45%;" ref="form" :model="form" label-width="80px">
+			<div>
+				我我我
+				你你你
+				他他他
+			</div>
+			<div>你好<span>张三</span>先生
+			</div>
 			<el-form-item label="活动名称">
 				<el-input v-model="form.name"></el-input>
 			</el-form-item>
@@ -59,7 +66,6 @@
 		</el-table>
 	</div>
 </template>
-
 <script>
 export default {
 	name: "HelloWorld",

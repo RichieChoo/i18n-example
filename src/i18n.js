@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
 
+const a = "收到噶啥大概"
 Vue.use(VueI18n)
 
 function loadLocaleMessages () {
