@@ -2,7 +2,7 @@
 	<div class="hello">
 		<el-form style="width:45%;" ref="form" :model="form" label-width="80px">
 			<div>
-				我我我
+				我 我我 你 你你
 				你你你
 				他他他
 			</div>
