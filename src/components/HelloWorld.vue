@@ -2,13 +2,19 @@
 	<div class="hello">
 		<el-form style="width: 45%" ref="form" :model="form" label-width="80px">
 			<div>我 我我 你 你你 你你你 他他他</div>
+			<div>我 我我 你 你你 你你你 他他他</div>
+			<div>你好<span>张三</span>先生</div>
 			<div>你好<span>张三</span>先生</div>
 			<el-form-item label="活动性质">
 				<el-checkbox-group v-model="form.type">
 					<el-checkbox label="美食/餐厅线上活动" name="type"></el-checkbox>
+					<el-checkbox label="美食/餐厅线上活动2" name="type"></el-checkbox>
 					<el-checkbox label="地推活动" name="type"></el-checkbox>
+					<el-checkbox label="地推活动2" name="type"></el-checkbox>
 					<el-checkbox label="线下主题活动" name="type"></el-checkbox>
+					<el-checkbox label="线下主题活动2" name="type"></el-checkbox>
 					<el-checkbox label="单纯品牌曝光" name="type"></el-checkbox>
+					<el-checkbox label="单纯品牌曝光2" name="type"></el-checkbox>
 				</el-checkbox-group>
 			</el-form-item>
 			<el-form-item label="活动名称">
