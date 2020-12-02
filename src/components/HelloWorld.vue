@@ -1,13 +1,16 @@
 <template>
 	<div class="hello">
-		<el-form style="width:45%;" ref="form" :model="form" label-width="80px">
-			<div>
-				我 我我 你 你你
-				你你你
-				他他他
-			</div>
-			<div>你好<span>张三</span>先生
-			</div>
+		<el-form style="width: 45%" ref="form" :model="form" label-width="80px">
+			<div>我 我我 你 你你 你你你 他他他</div>
+			<div>你好<span>张三</span>先生</div>
+			<el-form-item label="活动性质">
+				<el-checkbox-group v-model="form.type">
+					<el-checkbox label="美食/餐厅线上活动" name="type"></el-checkbox>
+					<el-checkbox label="地推活动" name="type"></el-checkbox>
+					<el-checkbox label="线下主题活动" name="type"></el-checkbox>
+					<el-checkbox label="单纯品牌曝光" name="type"></el-checkbox>
+				</el-checkbox-group>
+			</el-form-item>
 			<el-form-item label="活动名称">
 				<el-input v-model="form.name"></el-input>
 			</el-form-item>
@@ -19,23 +22,24 @@
 			</el-form-item>
 			<el-form-item label="活动时间">
 				<el-col :span="11">
-					<el-date-picker type="date" placeholder="选择日期" v-model="form.date1" style="width: 100%;"></el-date-picker>
+					<el-date-picker
+						type="date"
+						placeholder="选择日期"
+						v-model="form.date1"
+						style="width: 100%"
+					></el-date-picker>
 				</el-col>
 				<el-col class="line" :span="2">-</el-col>
 				<el-col :span="11">
-					<el-time-picker placeholder="选择时间" v-model="form.date2" style="width: 100%;"></el-time-picker>
+					<el-time-picker
+						placeholder="选择时间"
+						v-model="form.date2"
+						style="width: 100%"
+					></el-time-picker>
 				</el-col>
 			</el-form-item>
 			<el-form-item label="即时配送">
 				<el-switch v-model="form.delivery"></el-switch>
-			</el-form-item>
-			<el-form-item label="活动性质">
-				<el-checkbox-group v-model="form.type">
-					<el-checkbox label="美食/餐厅线上活动" name="type"></el-checkbox>
-					<el-checkbox label="地推活动" name="type"></el-checkbox>
-					<el-checkbox label="线下主题活动" name="type"></el-checkbox>
-					<el-checkbox label="单纯品牌曝光" name="type"></el-checkbox>
-				</el-checkbox-group>
 			</el-form-item>
 			<el-form-item label="特殊资源">
 				<el-radio-group v-model="form.resource">
@@ -57,10 +61,26 @@
 			<el-table-column label="配送信息">
 				<el-table-column prop="name" label="姓名" width="120"></el-table-column>
 				<el-table-column label="地址">
-					<el-table-column prop="province" label="省份" width="120"></el-table-column>
-					<el-table-column prop="city" label="市区" width="120"></el-table-column>
-					<el-table-column prop="address" label="地址" width="300"></el-table-column>
-					<el-table-column prop="zip" label="邮编" width="120"></el-table-column>
+					<el-table-column
+						prop="province"
+						label="省份"
+						width="120"
+					></el-table-column>
+					<el-table-column
+						prop="city"
+						label="市区"
+						width="120"
+					></el-table-column>
+					<el-table-column
+						prop="address"
+						label="地址"
+						width="300"
+					></el-table-column>
+					<el-table-column
+						prop="zip"
+						label="邮编"
+						width="120"
+					></el-table-column>
 				</el-table-column>
 			</el-table-column>
 		</el-table>
@@ -70,7 +90,7 @@
 export default {
 	name: "HelloWorld",
 	props: {
-		msg: String
+		msg: String,
 	},
 	data() {
 		return {
@@ -82,7 +102,7 @@ export default {
 				delivery: false,
 				type: [],
 				resource: "",
-				desc: ""
+				desc: "",
 			},
 			tableData: [
 				{
@@ -101,7 +121,7 @@ export default {
 						"沙" +
 						"江" +
 						"路1518弄",
-					zip: 200333
+					zip: 200333,
 				},
 				{
 					date: "2016-05-02",
@@ -109,7 +129,7 @@ export default {
 					province: "上海",
 					city: "普陀区",
 					address: "上海市普陀区金沙江路1518弄",
-					zip: 200333
+					zip: 200333,
 				},
 				{
 					date: "2016-05-04",
@@ -117,7 +137,7 @@ export default {
 					province: "上海",
 					city: "普陀区",
 					address: "上海市普陀区金沙江路1518弄",
-					zip: 200333
+					zip: 200333,
 				},
 				{
 					date: "2016-05-01",
@@ -125,7 +145,7 @@ export default {
 					province: "上海",
 					city: "普陀区",
 					address: "上海市普陀区金沙江路1518弄",
-					zip: 200333
+					zip: 200333,
 				},
 				{
 					date: "2016-05-08",
@@ -133,7 +153,7 @@ export default {
 					province: "上海",
 					city: "普陀区",
 					address: "上海市普陀区金沙江路1522弄",
-					zip: 200333
+					zip: 200333,
 				},
 				{
 					date: "2016-05-06",
@@ -141,7 +161,7 @@ export default {
 					province: "上海",
 					city: "普陀区",
 					address: "上海市普陀区金沙江路1518弄",
-					zip: 200333
+					zip: 200333,
 				},
 				{
 					date: "2016-05-07",
@@ -149,16 +169,16 @@ export default {
 					province: "上海",
 					city: "普陀区",
 					address: "上海市普陀区金沙江路1518弄",
-					zip: 200333
-				}
-			]
+					zip: 200333,
+				},
+			],
 		};
 	},
 	methods: {
 		onSubmit() {
 			console.log("submit!");
-		}
-	}
+		},
+	},
 };
 </script>
 
